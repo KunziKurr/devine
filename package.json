@@ -1,5 +1,22 @@
 {
-  "dependencies": {
-    "http-server": "^14.1.1"
-  }
+    "scripts": {
+        "start": "nodemon -e * index.html"
+    },
+    "dependencies": {
+        "http-server": "^14.1.1",
+        "nodemon": "^2.0.22"
+    },
+    "name": "devine_life",
+    "version": "1.0.0",
+    "description": "Charity foundation",
+    "main": "index.html",
+    "directories": {
+        "lib": "lib"
+    },
+    "devDependencies": {},
+    "keywords": [
+        "Korir"
+    ],
+    "author": "Korir Emmanuel",
+    "license": "ISC"
 }
