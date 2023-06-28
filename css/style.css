@@ -375,7 +375,7 @@
     transform: scale(1.1);
 }
 
-.team-item:hover {
+.team-item {
     height: 100%;
 }
 
