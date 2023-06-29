@@ -12089,3 +12089,20 @@ visibility: hidden;
             padding-left: 16rem;
         }
     }
+    
+    @media (max-width: 768px) {
+        .container-xxl.py-5.bg-dark.hero-header.mb-5 {
+            height: 100vh !important;
+        }
+        .bg_img {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background-image: linear-gradient(to bottom, #46381da1, #46381dc7), url(../img/hero.png);
+            background-size: cover;
+            background-position: 0 center;
+            position: absolute;
+            background-repeat: no-repeat;
+            left: 0rem;
+        }
+    }
