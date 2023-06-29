@@ -11275,7 +11275,7 @@
     visibility: hidden;
 } */
     
-    @media (min-width: 996px) and (max-width:1440px) {
+    @media (min-width: 996px) {
         .pe-4 {
             padding-right: 0 !important;
         }
@@ -11988,3 +11988,17 @@
             display: none;
         }
     }
+    
+    @media (min-width: 1600px){
+    .container-xxl.py-5.bg-dark.hero-header.mb-5::before {
+        content: "";
+        background-image: url(../img/hero.png);
+        z-index: 1;
+        background-size: 60vw 97vh;
+    }}
+.section-title{
+    display: block !important;
+    }
+.section-title::after{
+content:unset !important;
+}
