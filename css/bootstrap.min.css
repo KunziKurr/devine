@@ -12151,5 +12151,55 @@ visibility: hidden;
         .fight_lbl {
             font-size: 1.4rem;
         }
+        .vision_values_wrapper{
+            position:relative;
+        }
+       .home_page .vision_values_wrapper::before {
+            content: "";
+            margin: 0rem auto;
+            width: 93vw;
+            height: unset;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 6rem 0;
+            background-image: linear-gradient(to bottom, #fffdfd12, #808080d1), url(../img/vision.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 2.4rem;
+            top: -3rem;
+        }
+       .about_us_wrapper_partnering {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    .vision_values_wrapper .about_us_wrapper_devine_life {
+        font-size: 0.8rem !important;
+    }
+    .vision_values_wrapper {
+        background: unset;
+    }
+    .hth_wrapper_inner_bg {
+        height: 20vh;
+        border-radius: 0.75rem !important;
+        background-image: url(../img/hth.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .vision_values.wwd_page .vision_values_wrapper_bg {
+        margin: 2rem auto;
+        width: 97vw;
+        height: 28vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 0;
+        background-attachment: fixed;
+        background-image: url(../img/wwd.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        border-radius: 2rem;
+    }
     }
     
