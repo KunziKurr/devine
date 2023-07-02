@@ -11306,7 +11306,7 @@ visibility: hidden;
             top: 0vh;
         }
         .fight_lbl {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             margin-bottom: 0rem !important;
             line-height: 1.1;
             width: 90%
@@ -11324,7 +11324,7 @@ visibility: hidden;
             top: 1rem;
         }
         .header_positioning .display-4.text-white.animated.slideInLeft {
-            margin-bottom: 0rem !important;
+            margin-bottom: 5rem !important;
             font-size: 2.1rem;
         }
         .header_positioning .col-lg-6.text-center.text-lg-start {
@@ -11344,7 +11344,7 @@ visibility: hidden;
     
     .header_positioning .col-lg-6.text-center.text-lg-start {
         line-height: 0;
-        padding-left: 10rem;
+        padding-left: 8rem !important;
         position: relative;
         /* left: 3rem; */
     }
@@ -11468,6 +11468,7 @@ visibility: hidden;
         padding: .5rem;
         border-radius: .5rem;
         font-size: 2rem;
+        margin-top: 4rem;
     }
     
     .vision_values_wrapper_container {
@@ -11713,11 +11714,11 @@ visibility: hidden;
     }
     /*     
 .about_us.page [class*="about_us_wrappe"] {
-    width: 85%;
+width: 85%;
 }
 
 .about_us.page .about_us_wrapper_image_cont {
-    width: 95%
+width: 95%
 } */
     
     .about_us.page .one.about_us_wrapper_figting {
@@ -11874,18 +11875,18 @@ visibility: hidden;
         display: flex !important;
     }
     /* @media (min-width: 576px) {
-    .container,
-    .container-sm {
-        max-width: 540px
-    }
+.container,
+.container-sm {
+max-width: 540px
+}
 }
 
 @media (min-width: 768px) {
-    .container,
-    .container-sm,
-    .container-md {
-        max-width: 720px
-    }
+.container,
+.container-sm,
+.container-md {
+max-width: 720px
+}
 } */
     
     @media (max-width: 768px) {
@@ -11914,7 +11915,7 @@ visibility: hidden;
             background-color: #1B0603;
             width: 98vw;
             margin: 0 auto;
-            padding: 2.75rem 1rem;
+            padding: 1.75rem 1rem;
             border-radius: 2rem;
             color: #fff;
             position: relative;
@@ -12013,14 +12014,14 @@ visibility: hidden;
     
     .bg_img {
         height: 100vh;
-        width: 100vw;
+        width: 75vw;
         overflow: hidden;
         background-image: url(../img/hero.png);
         background-size: cover;
         background-position: 0 center;
         position: absolute;
         background-repeat: no-repeat;
-        left: -3rem;
+        left: 0rem;
     }
     
     .container-xxl.py-5.bg-dark.hero-header.mb-5 {
@@ -12028,9 +12029,9 @@ visibility: hidden;
         width: 100vw;
         /* padding-left: 6rem; */
         /* overflow: hidden;
-        background-image: url(../img/hero.png);
-        background-size: 75vw 100%;
-        background-position: 0 center; */
+background-image: url(../img/hero.png);
+background-size: 75vw 100%;
+background-position: 0 center; */
     }
     
     .navbar-dark {
@@ -12086,7 +12087,7 @@ visibility: hidden;
     
     @media (min-width: 1714px) {
         .header_positioning .col-lg-6.text-center.text-lg-start {
-            padding-left: 16rem;
+            padding-left: 8rem;
         }
     }
     
@@ -12105,23 +12106,22 @@ visibility: hidden;
             background-repeat: no-repeat;
             left: 0rem;
         }
-            .vision_values.page .vision_values_wrapper_bg {
-                margin: 0rem 0;
-                width: 100vw;
-                height: 45vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                padding: 0rem 0;
-                background-attachment: fixed;
-                background-image: url(../img/vision.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center 13rem;
-                margin-top: -9rem;
-                margin-bottom: -2rem;
+        .vision_values.page .vision_values_wrapper_bg {
+            margin: 0rem 0;
+            width: 100vw;
+            height: 45vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0rem 0;
+            background-attachment: fixed;
+            background-image: url(../img/vision.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center 13rem;
+            margin-top: -9rem;
+            margin-bottom: -2rem;
         }
-        
         .header_positioning .col-lg-6.text-center.text-lg-start {
             width: 100%;
             margin: 1rem auto;
@@ -12137,6 +12137,7 @@ visibility: hidden;
         .header_positioning .display-4.text-white.animated.slideInLeft {
             margin-bottom: 2rem;
             font-size: 1.9rem;
+            margin-top: 5rem;
         }
         .container-xxl.py-5.bg-dark.hero-header.mb-5 {
             height: 74vh !important;
@@ -12151,10 +12152,10 @@ visibility: hidden;
         .fight_lbl {
             font-size: 1.4rem;
         }
-        .vision_values_wrapper{
-            position:relative;
+        .vision_values_wrapper {
+            position: relative;
         }
-       .home_page .vision_values_wrapper::before {
+        .home_page .vision_values_wrapper::before {
             content: "";
             margin: 0rem auto;
             width: 93vw;
@@ -12169,37 +12170,195 @@ visibility: hidden;
             border-radius: 2.4rem;
             top: -3rem;
         }
-       .about_us_wrapper_partnering {
-        color: #fff;
-        font-size: 1.3rem;
-    }
-    .vision_values_wrapper .about_us_wrapper_devine_life {
-        font-size: 0.8rem !important;
-    }
-    .vision_values_wrapper {
-        background: unset;
-    }
-    .hth_wrapper_inner_bg {
-        height: 20vh;
-        border-radius: 0.75rem !important;
-        background-image: url(../img/hth.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .vision_values.wwd_page .vision_values_wrapper_bg {
-        margin: 2rem auto;
-        width: 97vw;
-        height: 28vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0 0;
-        background-attachment: fixed;
-        background-image: url(../img/wwd.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        border-radius: 2rem;
-    }
+        .about_us_wrapper_partnering {
+            color: #fff;
+            font-size: 1.3rem;
+        }
+        .vision_values_wrapper .about_us_wrapper_devine_life {
+            font-size: 0.8rem !important;
+        }
+        .vision_values_wrapper {
+            background: unset;
+        }
+        .hth_wrapper_inner_bg {
+            height: 20vh;
+            border-radius: 0.75rem !important;
+            background-image: url(../img/hth.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .vision_values.wwd_page .vision_values_wrapper_bg {
+            margin: 2rem auto;
+            width: 97vw;
+            height: 28vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0 0;
+            background-attachment: fixed;
+            background-image: url(../img/wwd.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            border-radius: 2rem;
+        }
     }
     
+    .wwd_inline_images {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 45vh;
+        margin: 1rem auto;
+    }
+    
+    .wwd_inline_images img {
+        border-radius: 1rem;
+    }
+    
+    .clean_water_project .about_us_wrapper_image_cont {
+        background-image: url(../img/cwp.svg);
+        background-size: cover;
+        background-position: center;
+        height: 56vh !important;
+    }
+    
+    .clean_water_project.fmt .about_us_wrapper_image_cont {
+        background-image: url(../img/mp.svg);
+        background-size: cover;
+        background-position: center;
+        height: 56vh !important;
+        background-repeat: no-repeat;
+    }
+    
+    @media (min-width: 992px) {
+        .donate .donate .about_us_wrapper_image_cont::before {
+            display: flex !important;
+        }
+    }
+    
+    @media (min-width: 992px) and (max-width:1440px) {
+        .navbar-dark .navbar-nav .nav-link {
+            font-size: 0.6rem !important;
+        }
+        .donate.btn {
+            padding: 0.4rem 0.8rem !important;
+            font-size: 0.6rem;
+        }
+        .fight_lbl {
+            font-size: 1rem;
+            margin-bottom: 0rem !important;
+            line-height: 1.25;
+            width: 90%;
+        }
+        .header_positioning .display-4.text-white.animated.slideInLeft {
+            margin-bottom: 3rem !important;
+            font-size: 2rem;
+        }
+        .bg_img {
+            height: 100vh;
+            width: 75vw;
+            overflow: hidden;
+            background-image: url(../img/hero.png);
+            background-size: cover;
+            background-position: 0 center;
+            position: absolute;
+            background-repeat: no-repeat;
+            left: 0rem;
+        }
+        .header_positioning .col-lg-6.text-center.text-lg-start {
+            line-height: 0;
+            padding-left: 4rem;
+        }
+        .vision_values_wrapper {
+            margin: 3rem 0;
+            width: 100vw;
+            height: 86vh;
+            padding: 1rem 0;
+        }
+        .vision_values_wrapper_h1 {
+            margin-top: 2rem;
+        }
+        .wwd_inline_images {
+            margin: 8rem auto;
+        }
+        .wwd_inline_images img {
+            border-radius: 1rem;
+            width: 47%;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .donate .donate .about_us_wrapper_image_cont::before {
+            display: flex !important;
+            border-radius: 2rem;
+        }
+        .donate .donate .about_us_wrapper_image_cont {
+            height: 20vh !important;
+            border-radius: 2rem;
+        }
+        .donate .donate .about_us_wrapper_devine_life {
+            margin-top: 2rem !important;
+        }
+        .donate .donate.about_us.page {
+            margin-top: 3rem;
+        }
+        .clean_water_project.fmt .about_us_wrapper_image_cont {
+            height: 22vh !important;
+            border-radius: 2rem;
+        }
+        .clean_water_project.fmt .about_us.page {
+            margin-top: 4rem;
+        }
+        .clean_water_project.fmt .about_us_wrapper .btn.btn-primary.py-2.px-4.donate {
+            width: 30% !important;
+            margin-left: unset;
+            text-align: center;
+        }
+        .clean_water_project .about_us_wrapper_image_cont {
+            height: 22vh !important;
+            border-radius: 2rem;
+        }
+        .clean_water_project .about_us.page {
+            margin-top: 4rem;
+        }
+        .clean_water_project .about_us_wrapper .btn.btn-primary.py-2.px-4.donate {
+            width: 30% !important;
+            margin-left: unset;
+            text-align: center;
+        }
+        .wwd_inline_images {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 45vh;
+            margin: 6rem auto;
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+        .wwd_inline_images img {
+            border-radius: 1rem;
+            width: 100%;
+        }
+        .vision_values.wwd_page .vision_values_wrapper_bg {
+            margin: 1rem auto;
+            width: 96vw;
+            height: 28vh;
+            background-attachment: unset;
+            background-size: cover;
+        }
+        .header_positioning .col-lg-6.text-center.text-lg-start {
+            width: 100%;
+            margin: 1rem auto;
+            padding: 0rem 1.4rem !important;
+            margin-top: 0rem !important;
+        }
+        .container-xxl.py-5.bg-dark.hero-header.mb-5 {
+            height: 67vh !important;
+        }
+        .container-xxl.py-5.bg-dark.hero-header.mb-5 .bg_img {
+            height: inherit;
+        }
+    }
