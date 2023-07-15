@@ -8012,7 +8012,7 @@ fieldset:disabled .btn {
 }
 
 .bg-dark {
-    background-color: #46381D!important;
+    background-color: #023C22 !important;
 }
 
 .bg-body {
@@ -11339,7 +11339,7 @@ visibility: hidden;
         padding-top: 6rem;
     }
     .about_us_wrapper_image_cont {
-        height: 35vh !important;
+        height: 85vh !important;
     }
 }
 
@@ -11391,22 +11391,18 @@ visibility: hidden;
 }
 
 .about_us_wrapper {
-    width: 90vw;
+    width: 100vw;
     margin: 0 auto;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
-    /* background-color: red; */
+    padding-bottom: 4rem;
 }
 
 .about_us_wrapper_image_cont {
     height: 25vh;
     width: inherit;
-    border-radius: 4rem;
     position: relative;
-    background-color: #D9D9D9;
-    padding-top: 1rem;
 }
 
 .about_us_wrapper_image_cont::before {
@@ -11414,13 +11410,14 @@ visibility: hidden;
     background-image: url(../img/about_us.png);
     height: inherit;
     width: 100%;
-    border-radius: 4rem;
+    border-radius: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
     z-index: 10;
     display: flex;
+    /* background-attachment: fixed; */
 }
 
 .about_us_wrapper_h1 {
@@ -11434,6 +11431,7 @@ visibility: hidden;
     text-align: left;
     margin-bottom: 1rem;
     font-size: 1.3rem;
+    padding-left: 6%;
 }
 
 .about_us_wrapper_partnering {
@@ -11445,22 +11443,24 @@ visibility: hidden;
 }
 
 .vision_values {
-    /* padding: 3rem 0; */
+    padding: 3rem 0;
     width: 100vw;
-    height: 80vh;
-    /* background-image: linear-gradient(to bottom, #fffdfd12, #808080d1), url(../img/vision.png); */
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #fefefe00, #8080801c), url(../img/vision.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .vision_values_wrapper {
     margin: 3rem 0;
     width: 100vw;
-    height: 80vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 4rem 0;
     background-attachment: fixed;
-    background-image: linear-gradient(to bottom, #fffdfd12, #808080d1), url(../img/vision.png);
+    /* background-image: linear-gradient(to bottom, #fffdfd12, #808080d1), url(../img/vision.png); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -11471,29 +11471,31 @@ visibility: hidden;
     opacity: .8;
     width: fit-content;
     margin: 0rem auto;
-    /* position: relative; */
-    top: 2rem;
+    position: relative;
+    top: -2rem;
     padding: .5rem;
     border-radius: .5rem;
     font-size: 2rem;
     margin-top: 4rem;
+    color: #000000;
 }
 
 .vision_values_wrapper_container {
-    background-color: #1B0603;
-    width: 70vw;
+    background-color: #F6E1A6;
+    width: 88vw;
     margin: 0 auto;
-    padding: 2.75rem;
+    padding: 1.75rem;
     border-radius: 2rem;
-    color: #fff;
+    color: #000000;
     /* margin-top: -10rem !important; */
     position: relative;
     top: -4rem;
 }
 
 .about_us_wrapper_partnering {
-    color: #fff;
+    color: #000000;
     font-size: 1.4rem;
+    padding-left: 6%;
 }
 
 .about_us_wrapper_devine_life {
@@ -11508,7 +11510,7 @@ visibility: hidden;
 
 .wwd {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     background-color: #217851;
     color: #fff;
 }
@@ -11516,11 +11518,12 @@ visibility: hidden;
 .wwd_wrapper {
     display: flex;
     flex-direction: row;
+    height: inherit;
 }
 
 .wwd_wrapper_wwd {
     width: 40vw;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -11533,7 +11536,6 @@ visibility: hidden;
 .wwd_wrapper_wwd_fl {
     width: 60vw;
     height: inherit;
-    height: 80vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -11551,6 +11553,7 @@ visibility: hidden;
     position: absolute;
     top: 11%;
     bottom: 0;
+    background-position: bottom;
     align-items: center;
 }
 
@@ -11617,7 +11620,7 @@ visibility: hidden;
 }
 
 .approach_wrapper_h1 {
-    background-color: #5C4E3F;
+    background-color: #493A1D;
     width: inherit;
     padding: 1.5rem 0;
     text-align: center;
@@ -11625,10 +11628,8 @@ visibility: hidden;
 }
 
 .approach_wrapper_img_cont {
-    width: 65%;
-    height: 40vh;
+    height: 62vh;
     margin: 1.75rem auto;
-    border-radius: 2.5rem;
     background-image: url(../img/approach.png);
     background-size: cover;
 }
@@ -11658,7 +11659,7 @@ visibility: hidden;
 
 .hth {
     padding: 1.5rem 0;
-    background-color: #000;
+    background-color: #023C22;
     width: 100%;
 }
 
@@ -11673,7 +11674,7 @@ visibility: hidden;
 }
 
 .hth_wrapper_inner {
-    width: 90% !;
+    width: 90% !important;
     margin: 0 auto;
     background-color: #fff;
     padding: .75rem;
@@ -11681,7 +11682,7 @@ visibility: hidden;
 }
 
 .hth_wrapper_inner_bg {
-    height: 40vh;
+    height: 55vh;
     /* margin: 1.75rem auto; */
     border-radius: .75rem !important;
     background-image: url(../img/hth.png);
@@ -11850,7 +11851,9 @@ width: 95%
     top: 0;
 }
 
-.about_us_wrapper_devine_life {}
+.about_us_wrapper_devine_life {
+    padding-left: 6%;
+}
 
 .vision_values.wwd_page .about_us_wrapper_partnering {
     color: #000;
@@ -12259,7 +12262,7 @@ background-position: 0 center; */
         font-size: 0.6rem;
     }
     .fight_lbl {
-        font-size: 1rem;
+        font-size: 1.6rem;
         margin-bottom: 0rem !important;
         line-height: 1.25;
         width: 90%;
@@ -12284,13 +12287,13 @@ background-position: 0 center; */
         padding-left: 4rem;
     }
     .vision_values_wrapper {
-        margin: 3rem 0;
+        margin: 0rem 0;
         width: 100vw;
-        height: 86vh;
+        height: inherit;
         padding: 1rem 0;
     }
     .vision_values_wrapper_h1 {
-        margin-top: 2rem;
+        margin-top: 0rem;
     }
     .wwd_inline_images {
         margin: 8rem auto;
@@ -12430,4 +12433,17 @@ background-position: 0 center; */
 
 .sign_up .container.text-center.my-5.pt-5.pb-4 {
     display: none !important;
+}
+
+.container-xxl.py-5.bg-dark.hero-header.mb-5 {
+    background-color: #46381D !important;
+}
+
+.about_us_wrapper_btn {
+    color: #000000;
+    padding-left: 6%;
+}
+
+.container.mbda {
+    max-width: unset !important;
 }
