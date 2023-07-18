@@ -101,6 +101,7 @@
     font-weight: 500;
     outline: none;
     transition: .5s;
+    text-transform: capitalize;
 }
 
 .sticky-top.navbar-dark .navbar-nav .nav-link {

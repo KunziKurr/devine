@@ -4317,7 +4317,8 @@ fieldset:disabled .btn {
         justify-content: flex-start
     }
     .navbar-expand-lg .navbar-nav {
-        flex-direction: row
+        flex-direction: row;
+        column-gap: 0.7rem;
     }
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         position: absolute
@@ -11379,8 +11380,9 @@ visibility: hidden;
     border: none !important;
     color: #522222 !important;
     border-radius: 2rem;
-    font-size: .9rem;
+    font-size: 0.7rem;
     font-weight: 700;
+    padding: 0.4rem 0.9rem !important;
 }
 
 .Aclonica {
@@ -12654,4 +12656,78 @@ background-position: 0 center; */
     background-size: 100%;
     background-position: bottom;
     background-repeat: no-repeat;
+}
+
+.about_us.page.donate.humanitarian_aid.faith_development .about_us_wrapper_image_cont.news_img {
+    height: 86vh !important;
+    background-image: url(../img/coming_soon.png) !important;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.vision_values.page .vision_values_wrapper_bg.vision_1 {
+    margin: 3rem 0;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 0;
+    background-image: url(../img/vision_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vision_values.page .vision_values_wrapper_bg.vision_2 {
+    margin: 3rem 0;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 0;
+    background-image: url(../img/vision_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.vision_values.page.hth .vision_values_wrapper_bg.hth_1 {
+    margin: 3rem 0;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 0;
+    background-image: url(../img/hth.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.vision_values.page.hth .vision_values_wrapper_bg.hth_2 {
+    margin: 3rem 0;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 0;
+    background-image: url(../img/hth_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.vision_values.page.hth {
+    margin-top: 9rem;
+    height: unset;
+    background: unset;
+}
+
+.vision_values.page.hth .donate.btn {
+    margin-left: 7rem;
+    margin-block-end: 1rem;
 }
