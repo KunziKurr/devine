@@ -12731,3 +12731,59 @@ background-position: 0 center; */
     margin-left: 7rem;
     margin-block-end: 1rem;
 }
+.about_us.page .about_us_wrapper_image_cont.water_project {
+    height: 75vh !important;
+    margin: 2rem 0;
+    background-image: url(../img/water_project.png);
+    background-size: cover;
+    background-position: center;
+}
+.about_us.page.donate.humanitarian_aid.faith_development.livelihoods .about_us_wrapper_image_cont.prog_2 {
+    height: 75vh !important;
+    margin: 2rem 0;
+    background-image: url(../img/liveli_hoods.png) !important;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.become_partner_form{
+    width: 90%;
+    margin: 3rem auto;
+}
+
+
+.become_partner_form .btn.btn-primary.w-100.py-3{
+    width: 30% !important;
+    margin: 3rem auto;
+    justify-content: center;
+    display: flex;
+}
+@media (max-width: 768px) {
+
+.navbar.navbar-expand-lg.navbar-dark{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 4rem;
+}
+[data-bs-target="#navbarCollapse"]{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+.navbar-collapse.collapse.show{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto !important;
+    flex-direction: column;
+}
+.navbar-nav.ms-auto.py-0.pe-4{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+}
