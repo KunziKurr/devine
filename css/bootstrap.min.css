@@ -11930,7 +11930,7 @@ max-width: 720px
         left: 0rem;
     }
     .vision_values_wrapper_container {
-        background-color: #1B0603;
+        background-color: #F6E1A6;
         width: 98vw;
         margin: 0 auto;
         padding: 1.75rem 1rem;
@@ -12003,6 +12003,7 @@ max-width: 720px
     }
     .container-xxl.position-relative.p-0 .py-5 {
         height: unset !important;
+        margin-top: 0rem;
     }
     .header_positioning .col-lg-6.text-center.text-lg-end.overflow-hidden .img {
         display: none;
@@ -12153,9 +12154,9 @@ background-position: 0 center; */
         font-size: 2rem;
     }
     .header_positioning .display-4.text-white.animated.slideInLeft {
-        margin-bottom: 2rem;
+        margin-bottom: 6rem;
         font-size: 1.9rem;
-        margin-top: 5rem;
+        margin-top: 12rem;
     }
     .container-xxl.py-5.bg-dark.hero-header.mb-5 {
         height: 74vh !important;
@@ -12174,7 +12175,7 @@ background-position: 0 center; */
         position: relative;
     }
     .home_page .vision_values_wrapper::before {
-        content: "";
+        content: unset;
         margin: 0rem auto;
         width: 93vw;
         height: unset;
@@ -12189,11 +12190,12 @@ background-position: 0 center; */
         top: -3rem;
     }
     .about_us_wrapper_partnering {
-        color: #fff;
+        color: #0f172b;
         font-size: 1.3rem;
     }
     .vision_values_wrapper .about_us_wrapper_devine_life {
         font-size: 0.8rem !important;
+        color: #0f172b;
     }
     .vision_values_wrapper {
         background: unset;
@@ -12327,7 +12329,7 @@ background-position: 0 center; */
         border-radius: 2rem;
     }
     .clean_water_project.fmt .about_us.page {
-        margin-top: 4rem;
+        margin-top: 7rem;
     }
     .clean_water_project.fmt .about_us_wrapper .btn.btn-primary.py-2.px-4.donate {
         width: 30% !important;
@@ -12731,6 +12733,7 @@ background-position: 0 center; */
     margin-left: 7rem;
     margin-block-end: 1rem;
 }
+
 .about_us.page .about_us_wrapper_image_cont.water_project {
     height: 75vh !important;
     margin: 2rem 0;
@@ -12738,6 +12741,7 @@ background-position: 0 center; */
     background-size: cover;
     background-position: center;
 }
+
 .about_us.page.donate.humanitarian_aid.faith_development.livelihoods .about_us_wrapper_image_cont.prog_2 {
     height: 75vh !important;
     margin: 2rem 0;
@@ -12746,44 +12750,191 @@ background-position: 0 center; */
     background-position: center;
 }
 
-
-.become_partner_form{
+.become_partner_form {
     width: 90%;
     margin: 3rem auto;
 }
 
-
-.become_partner_form .btn.btn-primary.w-100.py-3{
+.become_partner_form .btn.btn-primary.w-100.py-3 {
     width: 30% !important;
     margin: 3rem auto;
     justify-content: center;
     display: flex;
 }
-@media (max-width: 768px) {
 
-.navbar.navbar-expand-lg.navbar-dark{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    row-gap: 4rem;
+@media (max-width: 768px) {
+    .navbar.navbar-expand-lg.navbar-dark {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        row-gap: 0rem;
+        position: fixed;
+        z-index: 10000;
+        background: #46381D!important;
+        top: 0;
+    }
+    .navbar.navbar-expand-lg.navbar-dark svg {
+        width: 7rem !important;
+        top: 0.5rem !important;
+        margin-left: 0.9rem;
+    }
+    [data-bs-target="#navbarCollapse"] {
+        position: fixed;
+        top: 1.5rem;
+        right: 2rem;
+    }
+    .navbar-collapse.collapse.show {
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto !important;
+        flex-direction: column;
+        padding: 0 0 3rem 0;
+    }
+    .navbar-nav.ms-auto.py-0.pe-4 {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .home_page .vision_values {
+        height: 75vh;
+    }
+    .vision_values_wrapper {
+        height: auto;
+    }
+    .vision_values_wrapper_h1 {
+        top: 3rem;
+        color: #000;
+    }
+    .hth_wrapper_inner_bnt {
+        width: 50% !important;
+    }
+    .vision_values.page .vision_values_wrapper_bg.vision_1 {
+        height: 70vh;
+        background-attachment: unset;
+        margin-top: -8rem;
+    }
+    .vision_values_wrapper_container_parent {
+        flex-direction: column;
+    }
+    .vision_values_wrapper_container_pane:first-child,
+    .vision_values_wrapper_container_pane:last-child {
+        width: 100%;
+        border-radius: unset !important;
+    }
+    .vision_values.page .vision_values_wrapper_bg.vision_2 {
+        margin: 0rem 0;
+        height: 50vh;
+        padding: 0rem 0;
+        background-size: cover;
+        background-position: center;
+        background-attachment: unset;
+    }
+    .vision_values.page.hth {
+        margin-top: 4rem;
+    }
+    .vision_values.page.hth .vision_values_wrapper_h1 {
+        top: 3rem;
+        color: #000;
+        position: unset;
+        margin: 1rem 0 1rem 0;
+        width: 100%;
+    }
+    .vision_values.page.hth .vision_values_wrapper_bg.hth_1 {
+        background-attachment: unset;
+        height: 25vh;
+    }
+    .vision_values.page.hth .vision_values_wrapper_bg.hth_2 {
+        background-attachment: unset;
+        height: 25vh;
+        margin: unset;
+    }
+    .vision_values.page.hth .donate.btn {
+        margin-left: 1.5rem;
+        margin-block-end: 1rem;
+    }
+    .vision_values.wwd_page .vision_values_wrapper_h1 {
+        top: 0rem;
+        color: #000;
+    }
+    .vision_values.wwd_page .vision_values_wrapper_bg.bottom {
+        height: 25vh;
+        margin: 1rem 0;
+    }
+    .clean_water_project .about_us.page .about_us_wrapper_image_cont {
+        height: 24vh !important;
+    }
+    .about_us.page.donate.humanitarian_aid.faith_development.gender_equality .about_us_wrapper_image_cont {
+        height: 26vh !important;
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+        margin-bottom: 1rem;
+        border-radius: unset;
+    }
+    .about_us.page.donate.humanitarian_aid.faith_development .about_us_wrapper_image_cont.prog_1 {
+        height: 25vh !important;
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+        border-radius: unset;
+        margin: unset;
+    }
+    .about_us.page.donate.humanitarian_aid.faith_development.livelihoods .about_us_wrapper_image_cont.prog_2 {
+        height: 25vh !important;
+        margin: 0rem 0;
+        background-size: cover;
+        background-position: center;
+        border-radius: unset;
+    }
+    .about_us.page.donate.humanitarian_aid.faith_development .about_us_wrapper_image_cont {
+        height: 48vh !important;
+        background-image: url(../img/fd.png) !important;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    .about_us.page.donate.humanitarian_aid.faith_development.empowerment .about_us_wrapper_h1 {
+        width: 100%;
+    }
+    .about_us.page.donate.humanitarian_aid.faith_development.gender_equality.empowerment .about_us_wrapper_image_cont {
+        height: 26vh !important;
+        background-position: top;
+        background-repeat: no-repeat;
+        margin-bottom: 0rem;
+    }
+    .about_us.page.donate.humanitarian_aid.faith_development.gender_equality.empowerment.library .about_us_wrapper_image_cont {
+        height: 25vh !important;
+        background-repeat: no-repeat;
+    }
+    .about_us.page.donate.humanitarian_aid.faith_development.gender_equality.empowerment.library .about_us_wrapper_image_cont.pic_1 {
+        height: 25vh !important;
+    }
+    .about_us.page.donate.humanitarian_aid.faith_development.gender_equality.empowerment.library .about_us_wrapper_image_cont.pic_2 {
+        height: 25vh !important;
+    }
+    .about_us.page.donate.humanitarian_aid.faith_development .about_us_wrapper_image_cont.news_img {
+        height: 25vh !important;
+        border-radius: unset;
+    }
 }
-[data-bs-target="#navbarCollapse"]{
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
+
+.get_in_touch .row.g-3 {
+    padding: 0 3rem;
 }
-.navbar-collapse.collapse.show{
-    width: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto !important;
-    flex-direction: column;
+
+.vision_values_wrapper_h1.get_in_touch {
+    margin-top: -2rem;
 }
-.navbar-nav.ms-auto.py-0.pe-4{
-    width: 100%;
+
+.col-md-6.bg-dark.d-flex.align-items-center.sign_up_page {
+    width: 65%;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    background-color: #fff !important;
 }
+
+.vision_values_wrapper_h1.sign_up_page_heading {
+    margin-top: -2rem;
 }
