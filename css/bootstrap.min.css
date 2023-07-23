@@ -12919,6 +12919,12 @@ background-position: 0 center; */
         height: 25vh !important;
         border-radius: unset;
     }
+    .container-xxl.bg-white.p-0.home_page .vision_values_wrapper_h1 {
+        top: 0rem;
+        color: #000;
+        margin-top: -4rem;
+        margin-bottom: 4rem;
+    }
 }
 
 .get_in_touch .row.g-3 {
