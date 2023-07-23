@@ -12312,7 +12312,10 @@ background-position: 0 center; */
 @media (max-width: 768px) {
     .donate .donate .about_us_wrapper_image_cont::before {
         display: flex !important;
-        border-radius: 2rem;
+        border-radius: unset;
+        height: 24vh;
+        background-size: 96%;
+        width: 100%;
     }
     .donate .donate .about_us_wrapper_image_cont {
         height: 20vh !important;
@@ -12924,6 +12927,21 @@ background-position: 0 center; */
         color: #000;
         margin-top: -4rem;
         margin-bottom: 4rem;
+    }
+    .about_us.page.donate .about_us_wrapper_image_cont {
+        height: unset !important;
+    }
+    .sign_up .col-md-6.bg-dark.d-flex.align-items-center.sign_up_page {
+        width: 100%;
+    }
+    .container-xxl.bg-white.p-0.sign_up .p-5.wow.fadeInUp {
+        padding-left: unset;
+        padding-right: unset;
+    }
+    .container-xxl.bg-white.p-0.sign_up .p-5.wow.fadeInUp {
+        padding: unset !important;
+        width: 100%;
+        margin-top: 5rem;
     }
 }
 
