@@ -12962,3 +12962,19 @@ background-position: 0 center; */
 .vision_values_wrapper_h1.sign_up_page_heading {
     margin-top: -2rem;
 }
+
+a.nav-link:link {
+    color: var(--primary) !important;
+}
+
+a.nav-link:visited {
+    color: var(--primary) !important;
+}
+
+a.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+a.nav-link:active {
+    color: var(--primary) !important;
+}
