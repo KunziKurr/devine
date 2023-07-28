@@ -12978,3 +12978,23 @@ a.nav-link:hover {
 a.nav-link:active {
     color: var(--primary) !important;
 }
+
+table {
+    border: 2px solid #000;
+    width: 70vw;
+    margin: 1.5rem 0;
+    margin-left: 6%;
+}
+
+td,
+th {
+    border: 2px solid #000;
+}
+
+th {
+    padding: 2rem 0 1rem 0;
+}
+
+.strong {
+    color: #000
+}
