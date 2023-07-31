@@ -13072,3 +13072,18 @@ background-position: 0 center; */
                 margin: 0rem 0;
             }
         }
+        
+        @media (max-width: 412px) {
+            .header_positioning .display-4.text-white.animated.slideInLeft {
+                margin-bottom: 2rem;
+                font-size: 1.7rem;
+                margin-top: 11rem;
+            }
+        }
+        
+        @media (max-width: 912px) and (min-height:1024px) {
+            .bg_img {
+                height: 85vh;
+                width: 100vw;
+            }
+        }
