@@ -12277,7 +12277,7 @@ background-position: 0 center; */
             }
             .header_positioning .col-lg-6.text-center.text-lg-start {
                 line-height: 0;
-                padding-left: 4rem;
+                padding-left: 4rem !important;
             }
             .vision_values_wrapper {
                 margin: 0rem 0;
