@@ -5,6 +5,7 @@
     "dependencies": {
         "http-server": "^14.1.1",
         "live-server": "^1.2.2",
+        "nodemailer": "^6.9.4",
         "nodemon": "^2.0.22"
     },
     "name": "devine_life",
@@ -14,7 +15,6 @@
     "directories": {
         "lib": "lib"
     },
-    "devDependencies": {},
     "keywords": [
         "Korir"
     ],

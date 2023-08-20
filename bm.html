@@ -32,6 +32,42 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+
+    <script type="text/javascript">
+        function sendEmail(e) {
+            const firstName = $('#firstName').val()
+            const lastName = $('#lastName').val()
+            const emailAddress = $('#emailAddress').val();
+            const mailData = `
+            <span> <strong>Request to be partner for user:</span> </strong>
+            <ul>
+    
+        <li>${firstName}</li>
+        <br>
+        <li>${lastName}</li>
+        <br>
+        <li>${emailAddress}</li>
+
+    </ul>;`
+
+            Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "divine@dltcinternational.org",
+                    Password: "01FECFBBD23BC896FE77F28970339420A1F0",
+                    To: "divine@dltcinternational.org",
+                    From: "divine@dltcinternational.org",
+                    Subject: "Request to be a partner",
+                    Body: mailData
+                })
+                .then(function(message) {
+                    debugger;
+                    alert("mail sent successfully")
+                });
+        }
+    </script>
 </head>
 
 <body>
@@ -218,7 +254,7 @@
 
 
                     <div class="become_partner_form">
-                        <form>
+                        <form id="sendEmail">
                             <div class="row g-3">
 
                                 <p>We appreciate your interest in our organisation and would love to hear from you!
@@ -228,45 +264,39 @@
                                 <div class="col-md-6">
                                     <div class="form-floating">
 
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Your Name">
                                         <label for="name">First Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
 
-                                        <input type="text" class="form-control" id="name" placeholder="First Name">
+                                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="First Name">
                                         <label for="name">Last Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Last Email">
+                                        <input type="email" class="form-control" name="emailAddress" id="emailAddress" placeholder="Last Email">
                                         <label for="email">Email Address</label>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="tel" class="form-control" id="email" placeholder="Mobile Number">
-                                        <label for="email">Mobile Number</label>
-                                    </div>
-                                </div>
+
 
                                 <div class="col-12">
                                     <p>
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            <strong> GDPR Agreement </strong>
-    </label> I consent to DLTC International  processing this submitted information so they can respond to my enquiry for Membership.</p>
+                                                <strong> GDPR Agreement </strong>
+        </label> I consent to DLTC International  processing this submitted information so they can respond to my enquiry for Membership.</p>
                                 </div>
 
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Apply </button>
+                                    <button class="btn btn-primary w-100 py-3" id="sendMail" onclick="sendEmail()">Apply </button>
                                 </div>
                             </div>
                         </form>
                     </div>
-
 
 
 

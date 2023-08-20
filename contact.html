@@ -32,6 +32,48 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+
+    <script type="text/javascript">
+        function sendEmail(e) {
+            const fullName = $('#fullName').val()
+            const emailAddress = $('#emailAddress').val();
+            const textMessage = $('#textMessage').val();
+            const mailData = `
+        <span> <strong>Contact us Query :</span> </strong>
+        <ul>
+
+    <li>${fullName}</li>
+    <br>
+    <li>${emailAddress}</li>
+    <li>
+        Message <br>
+        <p>${textMessage}</p>
+</li>
+    <br>
+
+</ul>
+;`
+
+            Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "divine@dltcinternational.org",
+                    Password: "01FECFBBD23BC896FE77F28970339420A1F0",
+                    To: "divine@dltcinternational.org",
+                    From: "divine@dltcinternational.org",
+                    Subject: "Contact us Query ",
+                    Body: mailData
+                })
+                .then(function(message) {
+                    alert("mail sent successfully")
+                });
+        }
+    </script>
+
+
 </head>
 
 <body>
@@ -165,13 +207,13 @@
                                 <div class="col-md-6">
                                     <div class="form-floating">
 
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="fullName" placeholder="Your Name">
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control" id="emailAddress" placeholder="Your Email">
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
@@ -183,7 +225,7 @@
                                 </div> -->
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                        <textarea class="form-control" placeholder="Leave a message here" id="textMessage" style="height: 150px"></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>
@@ -197,7 +239,7 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    <button class="btn btn-primary w-100 py-3" onclick="sendEmail()">Send Message</button>
                                 </div>
                             </div>
                         </form>

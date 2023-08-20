@@ -32,6 +32,45 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+
+    <script type="text/javascript">
+        function sendEmail(e) {
+            const firstName = $('#firstName').val()
+            const lastName = $('#lastName').val()
+            const emailAddress = $('#emailAddress').val();
+            const mailData = `
+            <span> <strong>Request to be partner for user:</span> </strong>
+            <ul>
+    
+        <li>${firstName}</li>
+        <br>
+        <li>${lastName}</li>
+        <br>
+        <li>${emailAddress}</li>
+
+    </ul>;`
+
+            Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "divine@dltcinternational.org",
+                    Password: "01FECFBBD23BC896FE77F28970339420A1F0",
+                    To: "divine@dltcinternational.org",
+                    From: "divine@dltcinternational.org",
+                    Subject: "Request to be a partner",
+                    Body: mailData
+                })
+                .then(function(message) {
+                    alert("mail sent successfully")
+                });
+        }
+    </script>
+
+
+
 </head>
 
 <body>

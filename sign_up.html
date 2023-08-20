@@ -32,6 +32,43 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+
+    <script type="text/javascript">
+        function sendEmail(e) {
+            const fullName = $('#fullName').val()
+            const emailAddress = $('#emailAddress').val();
+            const textMessage = $('#textMessage').val();
+            const mailData = `
+        <span> <strong>Subscribe to our newsletter :</span> </strong>
+        <ul>
+        <br>
+        <li>${emailAddress}</li>
+        <li>
+            Message <br>
+            Subscribe to our newsletter 
+    </li>
+        <br>
+
+</ul>
+;`
+
+            Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "divine@dltcinternational.org",
+                    Password: "01FECFBBD23BC896FE77F28970339420A1F0",
+                    To: "divine@dltcinternational.org",
+                    From: "divine@dltcinternational.org",
+                    Subject: "Subscribe to our newsletter",
+                    Body: mailData
+                })
+                .then(function(message) {
+                    alert("mail sent successfully")
+                });
+        }
+    </script>
 </head>
 
 <body>
@@ -171,7 +208,7 @@
                                 </div> -->
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control" id="emailAddress" placeholder="Your Email">
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
@@ -184,7 +221,7 @@
 
 
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Subscribe</button>
+                                    <button class="btn btn-primary w-100 py-3" onclick="sendEmail()">Subscribe</button>
                                 </div>
                             </div>
                         </form>
