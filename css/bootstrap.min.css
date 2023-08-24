@@ -13240,8 +13240,13 @@ margin-bottom: 2rem;
 }
 @media (max-width:992px) {
     
+
+
+.success_box_wrapper_message {
+    padding: 0rem 0rem;
+}
 .success_box_wrapper {
-    height: 55vh;
+    height: auto;
     width: 90vw;
     background-color: white;
     display: flex;
@@ -13250,8 +13255,22 @@ margin-bottom: 2rem;
     padding: 2rem 1rem;
     flex-direction: column;
 }
+.success_box_wrapper_heading {
+    text-align: center;
+    font-size: 1.1rem;
+}
 
 .success_box_wrapper_message {
-    padding: 0rem 0rem;
+    margin-top: 1rem;
 }
+.success_box_wrapper_btn {
+    padding: 0.4rem 3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background-color: #98ae11;
+    border: unset;
+    color: #fff;
+    margin-top: 2rem;
+}
+
 }
