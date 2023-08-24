@@ -38,7 +38,8 @@
 
 
     <script type="text/javascript">
-        function sendEmail(e) {
+        function sendEmail(event) {
+           event.preventDefault();
             const firstName = $('#firstName').val()
             const lastName = $('#lastName').val()
             const emailAddress = $('#emailAddress').val();
@@ -263,7 +264,7 @@
                             </div>
 
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" id="sendMail" onclick="sendEmail()">Apply </button>
+                                <button class="btn btn-primary w-100 py-3" id="sendMail" onclick="sendEmail(event)">Apply </button>
                             </div>
                         </div>
                     </form>
