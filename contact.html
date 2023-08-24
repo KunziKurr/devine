@@ -38,7 +38,10 @@
 
 
     <script type="text/javascript">
-        function sendEmail(e) {
+        function sendEmail(event) {
+            event.preventDefault();
+            $('#spinner').addClass('active_spinner');
+            debugger;
             const fullName = $('#fullName').val()
             const emailAddress = $('#emailAddress').val();
             const textMessage = $('#textMessage').val();
@@ -68,15 +71,43 @@
                     Body: mailData
                 })
                 .then(function(message) {
-                    alert("mail sent successfully")
+            $('#spinner').removeClass('active_spinner');
+
+                    $('body').append(`  <div class="success_box">
+        <div class="success_box_wrapper">
+           <h1 class="success_box_wrapper_heading">Your request has been sent successfully</h1>
+           <div class="svg_wrapper">
+           <svg id="icon-checkmark" viewBox="0 0 32 32">
+                  <path d="M28.998 8.531l-2.134-2.134c-0.394-0.393-1.030-0.393-1.423 0l-12.795 12.795-6.086-6.13c-0.393-0.393-1.029-0.393-1.423 0l-2.134 2.134c-0.393 0.394-0.393 1.030 0 1.423l8.924 8.984c0.393 0.393 1.030 0.393 1.423 0l15.648-15.649c0.393-0.392 0.393-1.030 0-1.423z"></path>
+                  </svg>
+                  </div>
+                  
+                  <p class="success_box_wrapper_message">
+                    You your request has been sent and received. One of our team will reach out to you. Thank you.
+                  </p>
+                  
+                  <button class="success_box_wrapper_btn" onclick="okaySuccess()">
+                    OKAY
+                  </button>
+                  
+                  
+        </div>
+      </div>`)
                 });
         }
+
+        function okaySuccess(){
+            $('.success_box').remove('.success_box')
+        }
+
     </script>
 
 
 </head>
 
 <body>
+  
+
     <div class="container-xxl bg-white p-0 sign_up">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -233,7 +264,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <p> *When you submit this for, we will need to process your data in order to respond. Your data will only be processed for this purpose and will not be used for anything else.</p>
+                                    <p> *When you submit this form, we will need to process your data in order to respond. Your data will only be processed for this purpose and will not be used for anything else.</p>
 
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
@@ -242,7 +273,7 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" onclick="sendEmail()">Send Message</button>
+                                    <button class="btn btn-primary w-100 py-3" onclick="sendEmail(event)">Send Message</button>
                                 </div>
                             </div>
                         </form>
@@ -313,8 +344,10 @@
                     <div class="col-lg-3 col-md-6">
 
                         <h5 class="text-light fw-normal">ADDRESS.</h5>
-                        <h5 class="text-light fw-normal">100 THE SHAFTESBURYS </h5>
-                        <h5 class="text-light fw-normal">BARKING ESSEX IG11 7LAL.</h5>
+                        <h5 class="text-light fw-normal">100 THE SHAFTESBURYS</h5>
+                        <h5 class="text-light fw-normal">BARKING</h5>
+                        <h5 class="text-light fw-normal">ESSEX</h5>
+                        <h5 class="text-light fw-normal">IG11 7LA</h5>
                     </div>
                 </div>
             </div>

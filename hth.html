@@ -63,11 +63,36 @@
                     Subject: "Request to be a partner",
                     Body: mailData
                 })
-                .then(function(message) {
-                    alert("mail sent successfully")
+                    .then(function(message) {
+            $('#spinner').removeClass('active_spinner');
+
+                    $('body').append(`  <div class="success_box">
+        <div class="success_box_wrapper">
+           <h1 class="success_box_wrapper_heading">Your request has been sent successfully</h1>
+           <div class="svg_wrapper">
+           <svg id="icon-checkmark" viewBox="0 0 32 32">
+                  <path d="M28.998 8.531l-2.134-2.134c-0.394-0.393-1.030-0.393-1.423 0l-12.795 12.795-6.086-6.13c-0.393-0.393-1.029-0.393-1.423 0l-2.134 2.134c-0.393 0.394-0.393 1.030 0 1.423l8.924 8.984c0.393 0.393 1.030 0.393 1.423 0l15.648-15.649c0.393-0.392 0.393-1.030 0-1.423z"></path>
+                  </svg>
+                  </div>
+                  
+                  <p class="success_box_wrapper_message">
+                    You your request has been sent and received. One of our team will reach out to you. Thank you.
+                  </p>
+                  
+                  <button class="success_box_wrapper_btn" onclick="okaySuccess()">
+                    OKAY
+                  </button>
+                  
+                  
+        </div>
+      </div>`)
                 });
-            return false;
         }
+
+        function okaySuccess(){
+            $('.success_box').remove('.success_box')
+        }
+
     </script>
 
 </head>
@@ -174,7 +199,7 @@
 
         <!-- About us -->
         <div class="vision_values page hth ">
-            <h1 class="vision_values_wrapper_h1 Aclonica">
+            <h1 class="vision_values_wrapper_h1 bp_heading Aclonica">
                 HOW TO HELP
             </h1>
             <p class="about_us_wrapper_devine_life">
@@ -293,8 +318,10 @@
                     <div class="col-lg-3 col-md-6">
 
                         <h5 class="text-light fw-normal">ADDRESS.</h5>
-                        <h5 class="text-light fw-normal">100 THE SHAFTESBURYS </h5>
-                        <h5 class="text-light fw-normal">BARKING ESSEX IG11 7LAL.</h5>
+                        <h5 class="text-light fw-normal">100 THE SHAFTESBURYS</h5>
+                        <h5 class="text-light fw-normal">BARKING</h5>
+                        <h5 class="text-light fw-normal">ESSEX</h5>
+                        <h5 class="text-light fw-normal">IG11 7LA</h5>
                     </div>
                 </div>
             </div>
