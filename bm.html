@@ -38,6 +38,7 @@
 
     <script type="text/javascript">
         function sendEmail(event) {
+            event.preventDefault();
             const firstName = $('#firstName').val()
             const lastName = $('#lastName').val()
             const emailAddress = $('#emailAddress').val();
@@ -63,10 +64,31 @@
                     Body: mailData
                 })
                 .then(function(message) {
-                    debugger;
-                    alert("mail sent successfully")
+            $('#spinner').removeClass('active_spinner');
+
+                    $('body').append(`  <div class="success_box">
+        <div class="success_box_wrapper">
+           <h1 class="success_box_wrapper_heading">Your request has been sent successfully</h1>
+           
+                  
+                  <p class="success_box_wrapper_message">
+                   Your request has been sent and received. One of our team will reach out to you. Thank you.
+                  </p>
+                  
+                  <button class="success_box_wrapper_btn" onclick="okaySuccess()">
+                    OKAY
+                  </button>
+                  
+                  
+        </div>
+      </div>`)
                 });
         }
+
+        function okaySuccess(){
+            $('.success_box').remove('.success_box')
+            window.location.reload();
+        }  
     </script>
 </head>
 
